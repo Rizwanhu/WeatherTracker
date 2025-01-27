@@ -1,3 +1,41 @@
+# 🌤️ Weather Next.js App
+
+A modern weather application built with **Next.js** that provides real-time weather information for any location. This app leverages the power of server-side rendering (SSR) and static site generation (SSG) for optimal performance and SEO.
+
+![Weather App Screenshot]()
+
+---
+
+## 🚀 Features
+
+- **Real-Time Weather Data**: Fetch and display current weather conditions for any city.
+- **Search Functionality**: Easily search for weather information by city name.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **Dynamic Backgrounds**: Background changes based on weather conditions (e.g., sunny, rainy, snowy).
+- **API Integration**: Utilizes a weather API (e.g., OpenWeatherMap) to fetch data.
+- **Server-Side Rendering (SSR)**: Ensures fast loading and SEO optimization.
+- **Dark/Light Mode**: User-friendly theme toggle for better accessibility.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js, React, Tailwind CSS (or your preferred CSS framework)
+- **API**: OpenWeatherMap API (or any weather API)
+- **Deployment**: Vercel (or your preferred platform)
+- **Version Control**: Git, GitHub
+
+---
+
+## 📦 Installation
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Rizwanhu/WeatherTracker.git
+   cd weather-nextjs-app
+
 
 
 
