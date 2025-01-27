@@ -1,5 +1,11 @@
 'use client';
 
+/**
+ * WeatherCard Module
+ * Displays weather information for a selected location
+ */
+
+// Import dependencies for state management and data handling
 import { useState, useEffect } from 'react';
 import { fetchWeather } from '@/functions/dataFetching';
 import {
@@ -7,14 +13,20 @@ import {
   kelvinToFahrenheit,
 } from '@/functions/dataConvertation';
 
+// Import styles and related components
 import styles from '../public/styles/WeatherCard.module.scss';
 import GeocodeInput from './GeocodeInput';
 
+/**
+ * EmptyWeatherCard Component
+ * Displays placeholder content when no weather data is available
+ */
 const EmptyWeatherCard = () => {
   return (
     <div className={styles['weather-card']}>
       <h2 className={styles.name}>City</h2>
       <p className={styles.clouds}>Status</p>
+      <h1>Track Weather Updates Here</h1>
       <p className={styles.temperature}>Temeparute</p>
       <div className={styles['sun-container']}>
         <p>Sunrise: unknown</p>
@@ -24,11 +36,20 @@ const EmptyWeatherCard = () => {
   );
 };
 
+/**
+ * WeatherCard Component
+ * Main component for weather display and location selection
+ */
 const WeatherCard = () => {
+  // State management for weather data and location
   const [weatherConfig, setWeatherConfig] = useState(null);
   const [address, setAddress] = useState('');
   const [coordinates, setCoordinates] = useState({ lat: null, lng: null });
 
+  /**
+   * Effect hook to fetch weather data when coordinates change
+   * Processes and formats the weather data for display
+   */
   useEffect(() => {
     if (!address) return;
 
